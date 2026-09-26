@@ -14,4 +14,6 @@ class GreetingRepository {
     }
 
     fun greeted(): List<String> = names.toList()
+
+    fun distinctCount(): Int = names.map { it.lowercase() }.toSet().size
 }

@@ -23,4 +23,11 @@ class GreetingRepositoryTest {
         repository.greet("Grace")
         assertEquals(listOf("Ada", "Grace"), repository.greeted())
     }
+
+    @Test
+    fun countsDistinctNamesIgnoringCase() {
+        repository.greet("Ada")
+        repository.greet("ada")
+        assertEquals(1, repository.distinctCount())
+    }
 }
