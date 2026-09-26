@@ -1,4 +1,4 @@
-package com.abyxcz.template
+package com.abyxcz.studiodryrun
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -9,9 +9,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.abyxcz.template.resources.Res
-import com.abyxcz.template.resources.greeting
-import com.abyxcz.template.shared.Greeter
+import com.abyxcz.studiodryrun.resources.Res
+import com.abyxcz.studiodryrun.resources.greeting
+import com.abyxcz.studiodryrun.shared.Greeter
 import org.jetbrains.compose.resources.stringResource
 
 /** The whole app's UI, shared by Android and iOS; [platform] names the host. */

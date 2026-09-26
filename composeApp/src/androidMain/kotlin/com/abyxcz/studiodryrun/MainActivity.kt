@@ -1,4 +1,4 @@
-package com.abyxcz.template
+package com.abyxcz.studiodryrun
 
 import android.os.Build
 import android.os.Bundle

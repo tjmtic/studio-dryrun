@@ -1,4 +1,4 @@
-package com.abyxcz.template.shared
+package com.abyxcz.studiodryrun.shared
 
 /** Example of the shared layer: plain logic, tested in commonTest, no UI or platform types. */
 class Greeter {

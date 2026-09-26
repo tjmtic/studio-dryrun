@@ -22,7 +22,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.abyxcz.template.shared"
+    namespace = "com.abyxcz.studiodryrun.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig { minSdk = libs.versions.android.minSdk.get().toInt() }
     compileOptions {

@@ -12,7 +12,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "kmp-app-template"
+rootProject.name = "studio-dryrun"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 

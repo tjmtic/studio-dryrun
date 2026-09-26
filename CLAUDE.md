@@ -1,4 +1,4 @@
-# kmp-app-template — project conventions
+# studio-dryrun — project conventions
 
 A new app created from this template: rename it first (`scripts/rename.sh`, see README).
 Style is a tool, not a review subject: ktfmt (kotlinlang) + detekt at zero issues — run

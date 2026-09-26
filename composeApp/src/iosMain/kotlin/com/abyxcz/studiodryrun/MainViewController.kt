@@ -1,4 +1,4 @@
-package com.abyxcz.template
+package com.abyxcz.studiodryrun
 
 import androidx.compose.ui.window.ComposeUIViewController
 import platform.UIKit.UIDevice

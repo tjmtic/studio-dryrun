@@ -18,12 +18,12 @@ targets:
     info:
       path: Sources/Info.plist
       properties:
-        CFBundleDisplayName: KMP Template
+        CFBundleDisplayName: Studio Dryrun
         UILaunchScreen: {}
         CADisableMinimumFrameDurationOnPhone: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.abyxcz.template
+        PRODUCT_BUNDLE_IDENTIFIER: com.abyxcz.studiodryrun
         PRODUCT_NAME: iosApp
         FRAMEWORK_SEARCH_PATHS:
           - "$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)"

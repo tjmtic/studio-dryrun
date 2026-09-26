@@ -34,13 +34,13 @@ kotlin {
 }
 
 // Every user-facing string comes from Compose Resources (composeResources/values/strings.xml).
-compose.resources { packageOfResClass = "com.abyxcz.template.resources" }
+compose.resources { packageOfResClass = "com.abyxcz.studiodryrun.resources" }
 
 android {
-    namespace = "com.abyxcz.template"
+    namespace = "com.abyxcz.studiodryrun"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
-        applicationId = "com.abyxcz.template"
+        applicationId = "com.abyxcz.studiodryrun"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1

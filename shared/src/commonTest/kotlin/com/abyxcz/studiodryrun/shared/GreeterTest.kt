@@ -1,4 +1,4 @@
-package com.abyxcz.template.shared
+package com.abyxcz.studiodryrun.shared
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

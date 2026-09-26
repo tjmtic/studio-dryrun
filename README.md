@@ -1,4 +1,4 @@
-# kmp-app-template
+# studio-dryrun
 
 The starting point for every KMP app in the fleet: Compose Multiplatform on Android and iOS,
 the fleet style standard, CI, ViewPoint library wiring, and the manifest the studio builds from.
@@ -8,7 +8,7 @@ agent ever has to invent a Gradle project.
 ## Start an app
 
 ```bash
-gh repo create owner/my-app --template tjmtic/kmp-app-template --public --clone
+gh repo create owner/my-app --template tjmtic/studio-dryrun --public --clone
 ```
 
 ```bash

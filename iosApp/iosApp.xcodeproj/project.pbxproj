@@ -278,7 +278,7 @@
 					"-framework",
 					ComposeApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyxcz.template;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abyxcz.studiodryrun;
 				PRODUCT_NAME = iosApp;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +305,7 @@
 					"-framework",
 					ComposeApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abyxcz.template;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abyxcz.studiodryrun;
 				PRODUCT_NAME = iosApp;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

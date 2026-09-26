@@ -1,10 +1,12 @@
 {
-  "id": "kmp-app-template",
+  "id": "studio-dryrun",
   "kind": "kmp",
-  "project": { "repo": "tjmtic/kmp-app-template" },
+  "project": {
+    "repo": "tjmtic/studio-dryrun"
+  },
   "releaseBranch": "main",
   "mergeBranch": "develop",
-  "autoMerge": false,
+  "autoMerge": true,
   "appModule": "composeApp",
   "sections": [
     {
@@ -12,15 +14,35 @@
       "label": "Shared logic",
       "moduleDir": "shared/src",
       "gradleTest": ":shared:jvmTest",
-      "areas": ["logic", "model", "domain", "data"]
+      "areas": [
+        "logic",
+        "model",
+        "domain",
+        "data"
+      ]
     },
     {
       "id": "app",
       "label": "App UI",
       "moduleDir": "composeApp/src",
       "gradleTest": ":composeApp:testDebugUnitTest",
-      "areas": ["ui", "screen", "compose", "navigation"]
+      "areas": [
+        "ui",
+        "screen",
+        "compose",
+        "navigation"
+      ]
     }
   ],
-  "verify": ["./gradlew", "ktfmtCheck", ":detekt-rules:test", "detekt", ":shared:jvmTest", ":composeApp:testDebugUnitTest", ":composeApp:assembleDebug", ":composeApp:compileKotlinIosSimulatorArm64", "-Pkotlin.native.enableKlibsCrossCompilation=true"]
+  "verify": [
+    "./gradlew",
+    "ktfmtCheck",
+    ":detekt-rules:test",
+    "detekt",
+    ":shared:jvmTest",
+    ":composeApp:testDebugUnitTest",
+    ":composeApp:assembleDebug",
+    ":composeApp:compileKotlinIosSimulatorArm64",
+    "-Pkotlin.native.enableKlibsCrossCompilation=true"
+  ]
 }
