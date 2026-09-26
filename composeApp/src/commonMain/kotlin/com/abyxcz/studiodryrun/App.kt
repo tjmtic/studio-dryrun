@@ -9,23 +9,24 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.abyxcz.studiodryrun.resources.Res
-import com.abyxcz.studiodryrun.resources.greeting
-import com.abyxcz.studiodryrun.shared.Greeter
-import org.jetbrains.compose.resources.stringResource
 
-/** The whole app's UI, shared by Android and iOS; [platform] names the host. */
+/** Builds a greeting for [name]; a blank name greets a stranger. */
+fun greetingFor(name: String): String = if (name.isBlank()) "Hello, stranger!" else "Hello, $name!"
+
+/** A greeting screen showing [greetingFor] for [name]. */
 @Composable
-fun App(platform: String, modifier: Modifier = Modifier) {
-    MaterialTheme {
-        Surface(modifier = modifier.fillMaxSize()) {
-            Text(
-                text = stringResource(Res.string.greeting, Greeter().nameFor(platform)),
-                style = MaterialTheme.typography.headlineSmall,
-                // Edge to edge on both platforms: keep content out of the status bar, notch/
-                // Dynamic Island and gesture areas.
-                modifier = Modifier.safeDrawingPadding().padding(24.dp),
-            )
-        }
-    }
+fun GreetingScreen(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = greetingFor(name),
+        style = MaterialTheme.typography.headlineSmall,
+        // Edge to edge on both platforms: keep content out of the status bar, notch/
+        // Dynamic Island and gesture areas.
+        modifier = modifier.safeDrawingPadding().padding(24.dp),
+    )
+}
+
+/** The whole app's UI, shared by Android and iOS. */
+@Composable
+fun App(modifier: Modifier = Modifier) {
+    MaterialTheme { Surface(modifier = modifier.fillMaxSize()) { GreetingScreen("Studio") } }
 }
